@@ -13,9 +13,9 @@ export default defineNuxtConfig({
           href: 'https://fonts.googleapis.com/css?family=Rubik:300,500,700'
         }
       ],
-    }
+    },
   },
   css: [
     "~/assets/css/global.css"
-  ]
+  ],
 })
