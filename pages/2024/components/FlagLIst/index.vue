@@ -14,7 +14,7 @@
             <stop offset="100%" :stop-color="stopColor" />
           </linearGradient>
 
-          <path id="todo__line" stroke="url(#lineGradient)" d="M21 12.3h168v0.1z"></path>
+          <path id="todo__line" stroke="url(#lineGradient)" d="M33 12.3h610v0.1z"></path>
           <path id="todo__box" stroke="url(#boxGradient)"
             d="M21 12.7v5c0 1.3-1 2.3-2.3 2.3H8.3C7 20 6 19 6 17.7V7.3C6 6 7 5 8.3 5h10.4C20 5 21 6 21 7.3v5.4"></path>
           <path id="todo__check" stroke="url(#boxGradient)" d="M10 13l2 2 5-5"></path>
@@ -23,9 +23,9 @@
       </svg>
       <div class="todo-list">
         <label class="todo" v-for="(node, nodeIndex) in data?.flagList" :key="`todo_component_${nodeIndex}`">
-          <input class="todo-state" type="checkbox" :checked="node.checked" disabled/>
+          <input class="todo-state" type="checkbox" :checked="node.checked"/>
 
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 200 25"
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 25"
             class="todo-icon">
             <use xlink:href="#todo__line" class="todo-line"></use>
             <use xlink:href="#todo__box" class="todo-box"></use>
@@ -70,7 +70,7 @@ h3 {
 .todo {
   position: relative;
   display: block;
-  padding: 10px 10px 10px 16%;
+  padding: 10px 10px 10px 10%;
   margin: 0 auto;
   cursor: pointer;
   border-bottom: solid 1px #ddd;
@@ -89,7 +89,7 @@ h3 {
 
 .todo-text {
   max-width: 28em;
-  font-size: 1.6em;
+  font-size: 1.2em;
   font-weight: 300;
   line-height: 1.4;
   margin-block-start: 1em;
@@ -166,8 +166,8 @@ h3 {
 }
 
 .todo-line {
-  stroke-dasharray: 168, 1684;
-  stroke-dashoffset: 168;
+  stroke-dasharray: 610, 1684;
+  stroke-dashoffset: 610;
 }
 
 .todo-circle {
