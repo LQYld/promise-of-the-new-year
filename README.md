@@ -1,75 +1,16 @@
-# Nuxt 3 Minimal Starter
+# Introduction to promise of the new year
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome to my New Year's Flag Introduction Website! Here, you can learn about my new year goals and share the journey of achieving these goals with me.
 
-## Setup
+## Website Features:
 
-Make sure to install the dependencies:
+- Simple and clear interface design makes it easy for you to browse my new year goals.
 
-```bash
-# npm
-npm install
+- Provides detailed goal descriptions and plans so that you can understand my specific action steps.
 
-# pnpm
-pnpm install
+In addition, I will regularly update my progress and share inspiring stories and tips to help you stay motivated and on track. Whether you are setting new year goals for the first time or looking for inspiration and support in achieving your goals.
 
-# yarn
-yarn install
+If you have any questions or suggestions about my website, please feel free to contact me. Together, let's welcome the new year with enthusiasm and determination, and work towards achieving our goals!
 
-# bun
-bun install
-```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+Live website: [promise of the new year](https://new-year-flag.fe-ecosphere.com/2024) 
