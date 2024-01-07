@@ -215,11 +215,12 @@ h3 {
 }
 
 .box-progress {
-  width: 50%;
-  background-color: #4f3ff0;
+  width: 0%;
+  background-color: rgba(133, 170, 185, 1);
   display: block;
   height: 4px;
   border-radius: 6px;
+  transition:  all 5s linear;
 }
 
 .box-progress-percentage {
