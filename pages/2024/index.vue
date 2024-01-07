@@ -34,7 +34,7 @@
 </template>
 
 <script setup lang="ts">
-import FlagList from './components/FlagLIst/index.vue';
+import FlagList from './components/FlagList/index.vue';
 
 const workFlag = {
   title: "💼 Work",
