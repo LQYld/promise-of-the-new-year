@@ -23,7 +23,7 @@
       </svg>
       <div class="todo-list">
         <label class="todo" v-for="(node, nodeIndex) in data?.flagList" :key="`todo_component_${nodeIndex}`">
-          <input class="todo-state" type="checkbox" :checked="node.checked" disabled/>
+          <input class="todo-state" type="checkbox" :checked="node.checked" disabled />
 
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 25"
             class="todo-icon">
@@ -33,7 +33,13 @@
             <use xlink:href="#todo__circle" class="todo-circle"></use>
           </svg>
 
-          <p class="todo-text">{{ node.value }}</p>
+          <div>
+            <p class="todo-text">{{ node.value }}</p>
+            <div class="box-progress-bar">
+              <span :style="{width: `${node?.percentage || 0}%`}" class="box-progress" />
+            </div>
+            <p class="box-progress-percentage">{{`${node?.percentage || 0}%`}}</p>
+          </div>
         </label>
       </div>
     </div>
@@ -55,7 +61,6 @@ const stopColor = 'rgba(133, 170, 185, 1)'
 </script>
 
 <style scoped>
-
 h3 {
   font-size: 1.7em;
   font-weight: 400;
@@ -73,7 +78,7 @@ h3 {
   padding: 10px 10px 10px 10%;
   margin: 0 auto;
   cursor: pointer;
-  border-bottom: solid 1px #ddd;
+  /* border-bottom: solid 1px #ddd; */
 }
 
 .todo:last-child {
@@ -198,5 +203,30 @@ h3 {
 
 .todo-state:checked~.todo-icon .todo-circle {
   animation-name: explode;
+}
+
+.box-progress-bar {
+  width: 100%;
+  height: 4px;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: rgb(170 170 170 / .2);
+  margin: 8px 0;
+}
+
+.box-progress {
+  width: 50%;
+  background-color: #4f3ff0;
+  display: block;
+  height: 4px;
+  border-radius: 6px;
+}
+
+.box-progress-percentage {
+  text-align: right;
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
 }
 </style>

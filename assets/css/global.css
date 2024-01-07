@@ -13,6 +13,9 @@ body {
   --enter-initial: 0ms;
   --primary: rgba(133, 170, 185, 0.5);
   --grey-dark: #9baacf;
+  --c-bg: #fff;
+  --c-scrollbar: #bbb;
+  --c-scrollbar-hover: #bbb;
 }
 
 @keyframes slide-enter {
@@ -30,4 +33,23 @@ body {
 .slide-enter-content {
   animation: slide-enter 1s both 1;
   animation-delay: calc(var(--enter-initial) + var(--enter-stage) * var(--enter-step));
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--c-bg);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--c-scrollbar);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--c-scrollbar-hover);
 }

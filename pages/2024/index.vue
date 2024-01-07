@@ -16,9 +16,15 @@
           to achieve
           personal growth and
           development.</p>
-        <FlagList :data="workFlag" />
-        <FlagList :data="lifeFlag" />
-        <FlagList :data="personalFlag" />
+        <div class="slide-enter-content">
+          <FlagList :data="workFlag" />
+        </div>
+        <div class="slide-enter-content">
+          <FlagList :data="lifeFlag" />
+        </div>
+        <div class="slide-enter-content">
+          <FlagList :data="personalFlag" />
+        </div>
         <h3 class="slide-enter-content">End</h3>
       </div>
     </div>
@@ -34,19 +40,24 @@ const workFlag = {
   title: "💼 Work",
   flagList: [
     {
-      value: "Participate in the code review of colleagues' pull requests as much as possible."
+      value: "Participate in the code review of colleagues' pull requests as much as possible.",
+      percentage: 0
     },
     {
-      value: "Analyze the project design and considerations of the company's internal community."
+      value: "Analyze the project design and considerations of the company's internal community.",
+      percentage: 0
     },
     {
-      value: "Spend over 50% of the time coding, over 20% of the time participating in business."
+      value: "Spend over 50% of the time coding, over 20% of the time participating in business.",
+      percentage: 0
     },
     {
-      value: "Write documents in a timely manner to summarize and review every requirement."
+      value: "Write documents in a timely manner to summarize and review every requirement.",
+      percentage: 0
     },
     {
-      value: 'At least promote one rank.'
+      value: 'At least promote one rank.',
+      percentage: 0
     }
   ]
 }
@@ -55,16 +66,20 @@ const lifeFlag = {
   title: "🏖️ Life",
   flagList: [
     {
-      value: "Go back to your hometown several times and spend more time with your parents."
+      value: "Go back to your hometown several times and spend more time with your parents.",
+      percentage: 0
     },
     {
-      value: "Take a spontaneous trip in China and gain an in-depth understanding of the local customs and culture."
+      value: "Take a spontaneous trip in China and gain an in-depth understanding of the local customs and culture.",
+      percentage: 0
     },
     {
-      value: "Discard the previous lifestyle and pursue a comfortable and free attitude towards life."
+      value: "Discard the previous lifestyle and pursue a comfortable and free attitude towards life.",
+      percentage: 0
     },
     {
-      value: "Organize several camping activities to relax the body and mind and get close to nature."
+      value: "Organize several camping activities to relax the body and mind and get close to nature.",
+      percentage: 0
     }
   ]
 }
@@ -73,44 +88,55 @@ const personalFlag = {
   title: "👨🏻‍💻 Personal",
   flagList: [
     {
-      value: "With health as the top priority, exercise to lose weight and restore previous weight."
+      value: "With health as the top priority, exercise to lose weight and restore previous weight.",
+      percentage: 0
     },
     {
-      value: "Publish more than 50 articles externally, with no restrictions on topics, in order to acquire a small number of subscribers."
+      value: "Publish more than 50 articles externally, with no restrictions on topics, in order to acquire a small number of subscribers.",
+      percentage: 0
     },
     {
-      value: "Continue to delve into front-end technology and become proficient in nodejs, java, sql, nginx, and docker."
+      value: "Continue to delve into front-end technology and become proficient in nodejs, java, sql, nginx, and docker.",
+      percentage: 0
     },
     {
-      value: "Read 24 books with no limitations on the scope, and summarize the insights and experiences."
+      value: "Read 24 books with no limitations on the scope, and summarize the insights and experiences.",
+      percentage: 0
     },
     {
-      value: "Summarize the front-end resume design tutorial and summarize the negotiation话术of hard and soft skills in the interview."
+      value: "Summarize the front-end resume design tutorial and summarize the negotiation话术of hard and soft skills in the interview.",
+      percentage: 0
     },
     {
-      value: "Improve the ability to write true and false codes, and reflect the data structure design and algorithmic capabilities in programming."
+      value: "Improve the ability to write true and false codes, and reflect the data structure design and algorithmic capabilities in programming.",
+      percentage: 0
     },
     {
-      value: "On the LeetCode platform, strive to complete all algorithmic problems of easy and medium difficulty."
+      value: "On the LeetCode platform, strive to complete all algorithmic problems of easy and medium difficulty.",
+      percentage: 0
     },
     {
-      value: "Strive to submit code on GitHub every day and turn all contribution values in 2024 green."
+      value: "Strive to submit code on GitHub every day and turn all contribution values in 2024 green.",
+      percentage: 0
     },
     {
       value: "Finish learning the source code of Vue and React, and submit more than 10 technical PRs in the open source community, with no restrictions on projects.",
+      percentage: 0
     },
     {
-      value: "Try publishing works on media platforms, including but not limited to Douyin, Twitter, Xiaohongshu, YouTube, and Bilibili."
+      value: "Try publishing works on media platforms, including but not limited to Douyin, Twitter, Xiaohongshu, YouTube, and Bilibili.",
+      percentage: 0
     },
     {
-      value: "Attempt to develop a side business and earn the first pot of gold. There are no restrictions on the direction or industry."
+      value: "Attempt to develop a side business and earn the first pot of gold. There are no restrictions on the direction or industry.",
+      percentage: 0
     },
     {
-      value: "Improve English proficiency to the level where I can directly read technical documents without frequently using translation tools."
+      value: "Improve English proficiency to the level where I can directly read technical documents without frequently using translation tools.",
+      percentage: 0
     }
   ]
 }
-
 </script>
 
 <style scoped>
