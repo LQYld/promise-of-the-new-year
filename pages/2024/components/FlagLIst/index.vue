@@ -36,9 +36,9 @@
           <div>
             <p class="todo-text">{{ node.value }}</p>
             <div class="box-progress-bar">
-              <span :style="{width: `${node?.percentage || 0}%`}" class="box-progress" />
+              <span :style="{width: `${funcRunTime(node?.percentage) || 0}%`}" class="box-progress" />
             </div>
-            <p class="box-progress-percentage">{{`${node?.percentage || 0}%`}}</p>
+            <p class="box-progress-percentage">{{`${funcRunTime(node?.percentage) || 0}%`}}</p>
           </div>
         </label>
       </div>
@@ -58,6 +58,13 @@ defineProps({
 })
 
 const stopColor = 'rgba(133, 170, 185, 1)'
+
+const funcRunTime = (percentage: string | number | Function) => {
+  if(typeof percentage === 'function'){
+    return percentage() || ''
+  }
+  return percentage
+}
 </script>
 
 <style scoped>

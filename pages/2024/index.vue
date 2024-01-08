@@ -89,7 +89,7 @@ const personalFlag = {
   flagList: [
     {
       value: "With health as the top priority, exercise to lose weight and restore previous weight.",
-      percentage: ((20/86)* 100).toFixed(2)
+      percentage: () => ((20/86)* 100).toFixed(2)
     },
     {
       value: "Publish more than 50 articles externally, with no restrictions on topics, in order to acquire a small number of subscribers.",
@@ -117,7 +117,7 @@ const personalFlag = {
     },
     {
       value: "Strive to submit code on GitHub every day and turn all contribution values in 2024 green.",
-      percentage: ((9/366)*100).toFixed(2)
+      percentage: () => ((9/366)*100).toFixed(2)
     },
     {
       value: "Finish learning the source code of Vue and React, and submit more than 10 technical PRs in the open source community, with no restrictions on projects.",
