@@ -117,7 +117,7 @@ const personalFlag = {
     },
     {
       value: "Strive to submit code on GitHub every day and turn all contribution values in 2024 green.",
-      percentage: 1.91
+      percentage: 2.19
     },
     {
       value: "Finish learning the source code of Vue and React, and submit more than 10 technical PRs in the open source community, with no restrictions on projects.",
