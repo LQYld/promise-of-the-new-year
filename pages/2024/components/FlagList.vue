@@ -23,7 +23,7 @@
       </svg>
       <div class="todo-list">
         <label class="todo" v-for="(node, nodeIndex) in data?.flagList" :key="`todo_component_${nodeIndex}`">
-          <input class="todo-state" type="checkbox" :checked="node.checked" disabled />
+          <input class="todo-state" type="checkbox" :checked="node.checked" />
 
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 400 25"
             class="todo-icon">
@@ -33,12 +33,14 @@
             <use xlink:href="#todo__circle" class="todo-circle"></use>
           </svg>
 
-          <div>
+          <div class="todo-text-box">
             <p class="todo-text">{{ node.value }}</p>
-            <div class="box-progress-bar">
-              <span :style="{width: `${funcRunTime(node?.percentage) || 0}%`}" class="box-progress" />
-            </div>
-            <p class="box-progress-percentage">{{`${funcRunTime(node?.percentage) || 0}%`}}</p>
+            <template v-if="!node.checked">
+              <div class="box-progress-bar">
+                <span :style="{ width: `${funcRunTime(node?.percentage) || 0}%` }" class="box-progress" />
+              </div>
+              <p class="box-progress-percentage">{{ `${funcRunTime(node?.percentage) || 0}%` }}</p>
+            </template>
           </div>
         </label>
       </div>
@@ -60,7 +62,7 @@ defineProps({
 const stopColor = 'rgba(133, 170, 185, 1)'
 
 const funcRunTime = (percentage: string | number | Function) => {
-  if(typeof percentage === 'function'){
+  if (typeof percentage === 'function') {
     return percentage() || ''
   }
   return percentage
@@ -97,6 +99,10 @@ h3 {
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.todo-text-box {
+  transition: all var(--duration)/2 linear var(--duration)/2;
 }
 
 .todo-text {
@@ -188,7 +194,7 @@ h3 {
 }
 
 
-.todo-state:checked~.todo-text {
+.todo-state:checked~.todo-text-box>.todo-text {
   transition-delay: 0s;
   color: rgba(133, 170, 185, 1);
   opacity: 0.6;
@@ -227,7 +233,7 @@ h3 {
   display: block;
   height: 4px;
   border-radius: 6px;
-  transition:  all 5s linear;
+  transition: all 5s linear;
 }
 
 .box-progress-percentage {
