@@ -3,7 +3,7 @@
     <div class="flex w-full justify-between">
       <div class="relative pt-20">
         <span class="slide-enter-content">2024</span>
-        <h1 class="font-medium text-4xl slide-enter-content">Hey, I am Qingyun119.</h1>
+        <h1 class="font-medium text-4xl slide-enter-content">Hey, I am Qingyun119 (qìng yǔn).</h1>
         <p class="slide-enter-content"><a>Goodbye, 2023!</a> You have brought us countless memories and experiences,
           making us
           grow and become strong. Thank
