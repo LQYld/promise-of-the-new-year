@@ -41,19 +41,19 @@ const workFlag = {
   flagList: [
     {
       value: "Participate in the code review of colleagues' pull requests as much as possible.",
-      percentage: () => ((10/366)*100).toFixed(2)
+      percentage: () => ((12/366)*100).toFixed(2)
     },
     {
       value: "Analyze the project design and considerations of the company's internal community.",
-      percentage: () => ((10/366)*100).toFixed(2)
+      percentage: () => ((12/366)*100).toFixed(2)
     },
     {
       value: "Spend over 50% of the time coding, over 20% of the time participating in business.",
-      percentage: () => ((10/366)*100).toFixed(2)
+      percentage: () => ((12/366)*100).toFixed(2)
     },
     {
       value: "Write documents in a timely manner to summarize and review every requirement.",
-      percentage: () => ((10/366)*100).toFixed(2)
+      percentage: () => ((12/366)*100).toFixed(2)
     },
     {
       value: 'At least promote one rank.',
@@ -75,7 +75,7 @@ const lifeFlag = {
     },
     {
       value: "Discard the previous lifestyle and pursue a comfortable and free attitude towards life.",
-      percentage: () => ((10/366)*100).toFixed(2)
+      percentage: () => ((12/366)*100).toFixed(2)
     },
     {
       value: "Organize several camping activities to relax the body and mind and get close to nature.",
@@ -117,7 +117,7 @@ const personalFlag = {
     },
     {
       value: "Strive to submit code on GitHub every day and turn all contribution values in 2024 green.",
-      percentage: () => ((10/366)*100).toFixed(2)
+      percentage: () => ((12/366)*100).toFixed(2)
     },
     {
       value: "Finish learning the source code of Vue and React, and submit more than 10 technical PRs in the open source community, with no restrictions on projects.",
