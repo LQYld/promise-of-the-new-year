@@ -41,19 +41,19 @@ const workFlag = {
   flagList: [
     {
       value: "Participate in the code review of colleagues' pull requests as much as possible.",
-      percentage: () => ((29/366)*100).toFixed(2)
+      percentage: () => ((32/366)*100).toFixed(2)
     },
     {
       value: "Analyze the project design and considerations of the company's internal community.",
-      percentage: () => ((29/366)*100).toFixed(2)
+      percentage: () => ((32/366)*100).toFixed(2)
     },
     {
       value: "Spend over 50% of the time coding, over 20% of the time participating in business.",
-      percentage: () => ((29/366)*100).toFixed(2)
+      percentage: () => ((32/366)*100).toFixed(2)
     },
     {
       value: "Write documents in a timely manner to summarize and review every requirement.",
-      percentage: () => ((29/366)*100).toFixed(2)
+      percentage: () => ((32/366)*100).toFixed(2)
     },
     {
       value: 'At least promote one rank.',
@@ -75,7 +75,7 @@ const lifeFlag = {
     },
     {
       value: "Discard the previous lifestyle and pursue a comfortable and free attitude towards life.",
-      percentage: () => ((29/366)*100).toFixed(2)
+      percentage: () => ((32/366)*100).toFixed(2)
     },
     {
       value: "Organize several camping activities to relax the body and mind and get close to nature.",
@@ -117,7 +117,7 @@ const personalFlag = {
     },
     {
       value: "Strive to submit code on GitHub every day and turn all contribution values in 2024 green.",
-      percentage: () => ((29/366)*100).toFixed(2)
+      percentage: () => ((32/366)*100).toFixed(2)
     },
     {
       value: "Finish learning the source code of Vue and React, and submit more than 10 technical PRs in the open source community, with no restrictions on projects.",
@@ -165,7 +165,7 @@ p {
 a {
   text-decoration: none;
   white-space: nowrap;
-  color: #292929;
+  color: #323232;
   position: relative;
   cursor: pointer;
 }
@@ -178,7 +178,7 @@ a:after {
   left: -0.1em;
   right: -0.1em;
   bottom: 0;
-  transition: top 200ms cubic-bezier(0, 0.8, 0.29, 1);
+  transition: top 200ms cubic-bezier(0, 0.8, 0.32, 1);
   background-color: var(--primary);
 }
 
